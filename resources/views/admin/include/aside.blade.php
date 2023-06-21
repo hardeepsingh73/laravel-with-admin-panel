@@ -1,7 +1,7 @@
 <aside class="aside is-placed-left is-expanded">
     <div class="aside-tools">
         <div>
-            Admin <b class="font-black">One</b>
+            Hardeep <b class="font-black">Singh</b>
         </div>
     </div>
     <div class="menu is-menu-main">
@@ -29,6 +29,12 @@
                 <a href="profile">
                     <span class="icon"><i class="mdi mdi-account-circle"></i></span>
                     <span class="menu-item-label">Profile</span>
+                </a>
+            </li>
+            <li class="--set-active-profile-html {{ request()->is('*/change_password') ? 'active' : '' }}">
+                <a href="change_password">
+                    <span class="icon"><i class="mdi mdi-account-circle"></i></span>
+                    <span class="menu-item-label">Change Password</span>
                 </a>
             </li>
 

@@ -28,9 +28,10 @@ Route::prefix('admin')->group(function () {
 Route::prefix('admin')->middleware('admin')->group(function () {
     // Admin routes go here.
     Route::controller(DashboardController::class)->group(function () {
+        Route::get('/', 'redirect');
         Route::get('dashboard', 'dashboard');
         Route::get('users', 'users_view');
         Route::get('profile', 'profile_view');
-        Route::get('/', 'redirect');
+        Route::get('change_password', 'change_password');
     });
 });

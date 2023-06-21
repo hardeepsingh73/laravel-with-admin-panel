@@ -35,6 +35,15 @@ class DashboardController extends Controller
         return view('admin.profile');
     }
     /**
+     * Show the change_password View.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function change_password()
+    {
+        return view('admin.change_password');
+    }
+    /**
      * Redirect to the dashboard.
      *
      * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
