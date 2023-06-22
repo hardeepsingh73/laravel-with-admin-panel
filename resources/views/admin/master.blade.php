@@ -39,6 +39,15 @@
         @include('admin.include.aside')
     @endif
     <div id="app">
+        <section class="is-title-bar">
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+                <ul>
+                    @foreach (Request::segments() as $segment)
+                        <li>{{ $segment }} </li>
+                    @endforeach
+                </ul>
+            </div>
+        </section>
         @yield('content')
     </div>
     @if (!request()->is('*/login'))

@@ -1,7 +1,7 @@
 <aside class="aside is-placed-left is-expanded">
     <div class="aside-tools">
         <div>
-            Hardeep <b class="font-black">Singh</b>
+            Admin <b class="font-black">Panel</b>
         </div>
     </div>
     <div class="menu is-menu-main">
